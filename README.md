@@ -25,3 +25,5 @@ How to generate random avatars:
 ```
 convert -size 16x16 xc: +noise Random -scale 256x256 -strip public/assets/avatars/${username}.png
 ```
+
+The `update-avatars.sh` script can be used to automatically pull avatars from GitHub (and potentially other sources).
