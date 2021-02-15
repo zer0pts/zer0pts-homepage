@@ -1,106 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@400;700&display=swap');
 
-html,body {
-  margin: 0;
-  padding: 0;
-}
-
-#container {
-  max-width: 1000px;
+body {
   margin: 0 auto;
+  padding: 0.5rem 1.5rem 2rem;
+  max-width: 1000px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-#logo img {
+img.logo {
   display: block;
   width: 50%;
-  margin: 0 auto;
+  margin: 1.2rem auto;
 }
 
 h2 {
+  margin: 1rem 0 0.5rem;
   font-family: 'Nerko One', cursive;
   font-size: 3rem;
-  margin: 0;
-  margin-top: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #3b88c3;
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+li {
+  margin-bottom: 0.25rem;
 }
 
 section {
   padding-left: 2rem;
 }
 
-.favicon {
+img.favicon {
   display: inline-block;
-  padding: 0 0.25rem;
-  vertical-align: middle;
   height: 1.2rem;
+  padding-right: 0.3rem;
+  vertical-align: middle;
 }
 
-.flex {
+section.flex {
   display: flex;
+  margin: -0.5rem;
   flex-wrap: wrap;
 }
 
-.card {
-  display: block;
-  width: 18rem;
-  height: 6rem;
-
-  border-radius: 5px;
-  box-shadow: 0 0 3px #000000;
-
-  padding-left: 1rem;
-  padding-top: 0.5rem;
-
-  overflow: hidden;
+section.members.flex {
+  margin-left: -2rem; /* -(8rem - 5rem) / 2 + -0.5rem */
 }
 
-.card-title {
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-
-.card-links {
-  padding-left: 1rem;
+section.flex > div {
+  margin: 0.5rem;
 }
 
 .member {
-  width: 12rem;
+  width: 8rem;
 }
-.member a {
+
+.member > a {
   text-decoration: none;
   color: inherit;
   font-family: 'Nerko One', cursive;
 }
 
 .member-icon {
-  height: 5rem;
-  display: block;
+  display: flex;
+  height: 5.625rem;
+  width: 5.625rem;
   margin: 0 auto;
-
-  border: 1px solid #FE019A;
-  border-radius: 100%;
-  margin-top: 4px;
-  margin-bottom: 4px;
-
-  transition: all .1s ease-out;
+  align-items: center;
+  justify-content: center;
 }
-.member:hover .member-icon {
-  border-width: 5px;
-  margin-top: 0;
-  margin-bottom: 0;
+
+.member-icon > img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5px;
+  transition: all .1s ease-out;
+  box-shadow: 0 0 3px #000000;
+}
+
+.member:hover .member-icon > img {
+  height: 5.625rem;
+  width: 5.625rem;
 }
 
 .member-name {
   text-align: center;
 }
 
-.awards li {
+span.medal {
   font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.card {
+  display: block;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #000000;
+}
+
+.card-title {
   font-weight: bold;
-  margin-bottom: 0.25rem;
+}
+
+ul.card-links {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
 }
