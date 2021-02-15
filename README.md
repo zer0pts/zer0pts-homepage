@@ -19,3 +19,9 @@ You can find noteworthy CTFs with `grep -P '^\t' scoreboard.txt | awk '$1 <= 3'`
 ## Members
 
 [ptr-yudai, st98, theoldmoon0602, yoshiking] --> [aventador] --> [x0r19x91] --> [keymoon] --> [mitsu] --> [s1r1us] --> [S3v3ru5] --> [jskim] --> [kot]
+
+How to generate random avatars:
+
+```
+convert -size 16x16 xc: +noise Random -scale 256x256 -strip public/assets/avatars/${username}.png
+```
