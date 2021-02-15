@@ -9,6 +9,8 @@ https://www.zer0pts.com/
 * `🥉.svg` ← https://twemoji.maxcdn.com/v/13.0.1/svg/1f949.svg
 * `ctftime-logo.svg` ← https://ctftime.org/static/images/ct/logo.svg
 * `gitlab-logo.svg` ← https://docs.gitlab.com/assets/images/gitlab-logo.svg
+* `fonts.css` ← https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@400;700&display=swap (modified: latin parts only, edited src, removed unicode-range)
+* `fonts.gstatic.com/[...]` ← <https://fonts.gstatic.com/[...]> (see Fonts)
 
 ## Scoreboard
 
@@ -27,3 +29,10 @@ convert -size 16x16 xc: +noise Random -scale 256x256 -strip public/assets/avatar
 ```
 
 The `update-avatars.sh` script can be used to automatically pull avatars from GitHub (and potentially other sources).
+
+## Fonts
+
+```
+cd public/assets
+wget -x https://fonts.gstatic.com/s/nerkoone/v2/m8JQjfZSc7OXlB3ZMOjDd5RA.woff2 https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2 https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2
+```
